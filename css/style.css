@@ -1,0 +1,39 @@
+.vert {
+	color: #008000;
+}
+.vert {
+	color: #008000;
+}
+
+.card {
+	width: 100%;
+
+}
+
+.toggleCv {
+	display: none;
+}
+
+.toggledCv {
+	display: block;
+}
+
+.black {
+	color: black;
+}
+
+.logow{
+	width: 50%;
+}
+
+.border {
+	border: solid black 1px;
+}
+
+.bigtitle {
+	font-size: 2em
+}
+
+.title {
+	font-family: 'Lobster', cursive;
+}
