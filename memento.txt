@@ -1,0 +1,16 @@
+tout les autres sont caché
+le premeir est afficher
+quand je clique et valide le premier l'autre apparait 
+et ainsi de suite
+
+> class hide partout 
+> et toggle au click 
+
+au click on toggle la class hide > display
+
+
+coment passer de l'un à l'autre
+
+comptreur i++, chaque click i++ et affiche l'element avec l'id i
+
++pourcentage progress bar
