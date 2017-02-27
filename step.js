@@ -10,10 +10,10 @@ function progressBar() {
 	var h = x.length;
 	console.log(h+"tab")
 	var foo = 100/h;
-	console.log(foo)
+	/*console.log(foo)*/
 	/*Iteration a chaque click*/
 	x= i++*10;
-	document.getElementById("progressbar").style.width= foo+"%";
+	document.getElementById("progressbar").style.width= foo*g+"%";
 	/*switch de question*/
 
 	if (g == 0) {
@@ -21,19 +21,22 @@ function progressBar() {
 		console.log(f+"init");
 
 		
-		document.getElementById(g).classList.toggle("toggleCv");
-		document.getElementById(f).classList.toggle("toggleCv");
+		document.getElementById(g).classList.add("toggleCv")
+		
+		document.getElementById(f).classList.add("toggledCv");
 	}
 	else {
 		var p = g++;
 		var t = p-1;
-	/*	console.log(p+"+1");
+		console.log(p+"");
 		console.log(t+"-1");
-		console.log(g+"zini");*/
-		
+		console.log(g+"zini");
+		/*document.getElementById(0).classList.add("toggleCv");
+		document.getElementById(1).classList.add("toggleCv");*/
 		document.getElementById(t).classList.toggle("toggleCv");
 		document.getElementById(p).classList.toggle("toggleCv");
 	};
+	
 }
 
 /*function switchQh () {
