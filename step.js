@@ -4,13 +4,18 @@ var p = 0;
 var t = 0;
 
 function progressBar() {
-	x= i++*10;
-	document.getElementById("progressbar").style.width= x+"%";
-	console.log(x);
-}
 
-function switchQh () {
-	
+	/*calcul % avance form*/
+	var x = document.getElementById("frm1");
+	var h = x.length;
+	console.log(h+"tab")
+	var foo = 100/h;
+	console.log(foo)
+	/*Iteration a chaque click*/
+	x= i++*10;
+	document.getElementById("progressbar").style.width= foo+"%";
+	/*switch de question*/
+
 	if (g == 0) {
 		var f = g++;
 		console.log(f+"init");
@@ -31,23 +36,26 @@ function switchQh () {
 	};
 }
 
+/*function switchQh () {
+	
+	if (g == 0) {
+		var f = g++;
+		console.log(f+"init");
 
-/*function toggle() {
-
-$( "numero prescedent" ).toggleClass( numero suivant, addOrRemove );
-i++
-$(progressbar).style.widt= 100/arraylength
-}
-
-function progressBar () {
-	$( "no,bouton" ).click(function() {
-  $( "progressbar" ).animate({
-    opacity: 0.25,
-    left: "+=50",
-    height: "toggle"
-  }, 5000, function() {
-    // Animation complete.
-  });
-});
+		
+		document.getElementById(g).classList.toggle("toggleCv");
+		document.getElementById(f).classList.toggle("toggleCv");
+	}
+	else {
+		var p = g++;
+		var t = p-1;
+	/*	console.log(p+"+1");
+		console.log(t+"-1");
+		console.log(g+"zini");
+		
+		document.getElementById(t).classList.toggle("toggleCv");
+		document.getElementById(p).classList.toggle("toggleCv");
+	};
 }*/
+
 
