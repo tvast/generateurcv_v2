@@ -1,5 +1,5 @@
 var i=1;
-var g=0;
+var g=1;
 var p = 0;
 var t = 0;
 
@@ -22,7 +22,7 @@ function progressBar() {
 
 		
 		document.getElementById(g).classList.add("toggleCv")
-		
+
 		document.getElementById(f).classList.add("toggledCv");
 	}
 	else {
