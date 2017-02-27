@@ -12,6 +12,7 @@
 
 .toggleCv {
 	display: none;
+	/*visibility: hidden;*/
 }
 
 .toggledCv {
@@ -37,3 +38,4 @@
 .title {
 	font-family: 'Lobster', cursive;
 }
+
