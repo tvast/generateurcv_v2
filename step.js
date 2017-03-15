@@ -10,6 +10,7 @@ function progressBar() {
 	var x = document.getElementById("frm1");
 	var h = x.length;
 	var foo = 100/h;
+	var j = h+1;
 	
 	document.getElementById("progressbar").style.width= foo*g+"%";
 
@@ -24,8 +25,10 @@ function progressBar() {
 
 		document.getElementById(f).classList.add("toggledCv");
 	}
+	
 	else {
 		var p = g++;
+		console.log(p+"total");
 		var t = p-1;
 		document.getElementById(t).classList.toggle("toggleCv");
 		document.getElementById(p).classList.toggle("toggleCv");
@@ -40,4 +43,8 @@ function progressBar2() {
 	var foo = 100/h;
 	
 	document.getElementById("progressbar").style.width= (foo*g)-h+"%";
+
+		/*TODO switch de question*/
+
+
 }
