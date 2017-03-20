@@ -21,6 +21,16 @@ var t = 0;
 		document.getElementById(t).classList.toggle("toggleCv");
 		document.getElementById(p).classList.toggle("toggleCv");
 		document.getElementById("recul").innerHTML = "";
+
+
+	/*arrivé à la fin*/
+	var fab = h+1
+	if (g==fab) {
+
+		document.getElementById("control").classList.toggle("toggleCv");
+		console.log("coucou")
+
+	}
 });
 
 	/*Fleche droite avance*/
