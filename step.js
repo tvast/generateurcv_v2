@@ -24,6 +24,7 @@ function progressBar() {
 		document.getElementById(g).classList.add("toggleCv")
 
 		document.getElementById(f).classList.add("toggledCv");
+		document.getElementById("recul").innerHTML = "";
 	}
 	
 	else {
@@ -32,6 +33,7 @@ function progressBar() {
 		var t = p-1;
 		document.getElementById(t).classList.toggle("toggleCv");
 		document.getElementById(p).classList.toggle("toggleCv");
+		document.getElementById("recul").innerHTML = "";
 	};
 	
 }
@@ -46,23 +48,19 @@ function progressBar2() {
 
 		/*TODO switch de question*/
 
-		if (g !== 0) {
-		var f = g--;
-		console.log(f+"init recule");
-
-		
-		document.getElementById(g).classList.add("toggleCv")
-
-		document.getElementById(f).classList.add("toggledCv");
-	}
-	
-	/*else {
+		if (g < 0) {
 		var p = g--;
 		console.log(p+"total recule");
 		var t = p-1;
-		document.getElementById(t).classList.toggle("toggledCv");
-		document.getElementById(p).classList.toggle("toggledCv");
-	};*/
+		document.getElementById(t).classList.toggle("toggleCv");
+		document.getElementById(p).classList.toggle("toggleCv");
+	}
+	
+	else {
+		
+		document.getElementById("recul").innerHTML = "Recharger votre page pour modifier vos réponses";
+		
+	};
 
 
 }
