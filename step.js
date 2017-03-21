@@ -33,7 +33,7 @@ var t = 0;
 	}
 });
 
-	/*Fleche droite avance*/
+	/*Fleche gauche recule*/
 
 	document.getElementById("left").addEventListener("click", function(){
     	/*calcul % recule form*/
@@ -46,10 +46,10 @@ var t = 0;
 
 		/*TODO switch de question*/
 	
-		var p = g--;
+		/*var p = g--;
 		console.log(p+"total");
 		var t = p;
 		document.getElementById(p).classList.toggle("toggleCv");
-		document.getElementById(t).classList.toggle("toggleCv");
+		document.getElementById(t).classList.toggle("toggleCv");*/
 		document.getElementById("recul").innerHTML = "Rechargez votre page pour modifier vos réponses";
 });
