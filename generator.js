@@ -16,7 +16,7 @@ function toggleCv() {
   for (i = 0; i < x.length ;i++) {
     // text += x.elements[i].value 
     array.push(x.elements[i].value) 
-    console.log(array)   
+    //console.log(array)   
     }
     // ecriture de la lettre avec differentes variables
       /*  var adresse= "";
@@ -24,7 +24,7 @@ function toggleCv() {
         array[5]+ " "+array[6]+ " "+array[7]+ " "+array[8]+ " "+array[9]+ " "+array[10]+ " "+
         array[11]+ " "+array[12]+ " "+array[13];*/
     //combien d'entité
-    console.log(array.length+" "+"items in array")
+    //console.log(array.length+" "+"items in array")
     //construction du cv
     text = ("");
     text = (text + " " +array[0]+ " ");

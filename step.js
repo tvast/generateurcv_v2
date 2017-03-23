@@ -16,7 +16,7 @@ var t = 0;
 
 	/*switch de question*/	
 		var p = g++;
-		console.log(p+"total");
+		//console.log(p+"total");
 		var t = p-1;
 		document.getElementById(t).classList.toggle("toggleCv");
 		document.getElementById(p).classList.toggle("toggleCv");
@@ -28,7 +28,7 @@ var t = 0;
 	if (g==fab) {
 
 		document.getElementById("control").classList.toggle("toggleCv");
-		console.log("coucou")
+		//console.log("coucou")
 
 	}
 });
