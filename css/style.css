@@ -31,6 +31,10 @@
 	border: solid black 1px;
 }
 
+.borderBottom {
+	border-bottom: solid #2196F3 2px;
+}
+
 .bigtitle {
 	font-size: 2em
 }
@@ -49,9 +53,9 @@
 
 }
 
-footer {
+/*footer {
 	position: fixed; 
 	bottom: 0px; 
 	width: 100%;
-}
+}*/
 
