@@ -70,6 +70,10 @@
 
 }
 
+.highlight {
+	border-bottom: solid #2196F3 2px;
+}
+
 /*footer {
 	position: fixed; 
 	bottom: 0px; 
