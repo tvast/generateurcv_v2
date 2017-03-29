@@ -16,7 +16,7 @@ function toggleCv() {
   for (i = 0; i < x.length ;i++) {
     // text += x.elements[i].value 
     array.push(x.elements[i].value) 
-    console.log(array)   
+    // console.log(array)   
     }
     // ecriture de la lettre avec differentes variables
       /*  var adresse= "";
@@ -24,15 +24,17 @@ function toggleCv() {
         array[5]+ " "+array[6]+ " "+array[7]+ " "+array[8]+ " "+array[9]+ " "+array[10]+ " "+
         array[11]+ " "+array[12]+ " "+array[13];*/
     //combien d'entité
-    console.log(array.length+" "+"items in array")
+    // console.log(array.length+" "+"items in array")
     //construction du cv
     text = ("");
     text = (text + " " +array[0]+ " ");
-    text = (text + " " +array[1]+ "<br>12 rue " +array[2]+ " ");
-    text = (text + "<br> " +array[3]+ " ");
-    text = (text +"<br> " +array[4]+ " ans");
-    document.getElementById("head").innerHTML = text;
-    text2 = ("<center><strong>" +array[5]+ "</center></strong><br> ");
+    text = (text + " " +array[1]);
+    document.getElementById("head1").innerHTML = text;
+    text1 =  ("<br>12 rue " +array[2]+ " ");
+    text1 = (text1 + " | " +array[3]+ " | ");
+    text1 = (text1 +" | " +array[4]+ " ans");
+    document.getElementById("head2").innerHTML = text1;
+    text2 = (array[5]);
     document.getElementById("title").innerHTML = text2;
     text3 = ("<strong><br>FORMATION PROFESSIONNELLE</strong><br><br> " +array[6]+"<br>"+ "<br><strong>EXPERIENCE</strong><br><br> ");
     text3 = (text3 + "  " +array[7]+ " (de 2000 à 2009) <br>" +array[15]+ " (de 2010 à 2016)<strong><br><br>LANGUE</strong><br><br> " +array[8]+ " courant<br>");
@@ -43,9 +45,6 @@ function toggleCv() {
     text3 = (text3 +"<br>Pour ce poste mes prétentions sont de recevoir un salaire net mensuel de " +array[12]+ " par mois! ");
    //ajoute le texte dans la balise p avec l'id demo1
     document.getElementById("sub").innerHTML = text3;
-  
-    // var bar = document.getElementById("tagline") 
-    // bar.className +="toggledCv";
 
               }
 

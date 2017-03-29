@@ -15,7 +15,7 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
-<body>
+<body >
 
   <nav class="white lighten-1 lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="http://www.institutfrancais.es/madrid/cursos-online/" class="brand-logo"><img class="logow" src="http://www.institutfrancais.es/madrid/adjuntos/logotipo_20160719.jpg"></a>
@@ -475,7 +475,7 @@
     <div id="control" class="container center">
     <span id="recul">Bienvenu, cliquez sur la flèche pour continuer</span>
     	<a id="left" class="left action btn-floating btn-large waves-effect waves-light blue action"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-    	<a id="right" class="right btn-floating btn-large waves-effect waves-light blue action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    	<a id="right" onclick="toggleCv()" class="right btn-floating btn-large waves-effect waves-light blue action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
      
     </div>
      
@@ -485,19 +485,43 @@
     
 
     <form>
-     <div class="center">
       
     <!--   <div id="modal1" class="modal"> -->
-        <div class="modal-content z-depth-5">
-          <div class="container">
-          <img width="10%" class="left" src="http://www.doyoubuzz.com/var/users/_/2013/5/20/12/498796/avatar/429482/avatar_cp_big.jpg?t=1490785118?1490785120784">
-            <p class="borderBottom" id="head"></p>
-            <p class="border bigtitle" id="title"></p>
-            <p class="border" id="sub"></p>
-                  
-                  <p>Ce CV est bizarre ! Mais comment faire un vrai CV ? Consultez ce site !<a target="blank" href="http://cvenligne.onisep.fr/index.php/"> Onisep cv en ligne</a></p>
-                </div>
+    <div class="modal-content z-depth-5">
+      
+      
+        
+        <!-- header du cv -->
+        <div class="row">
+          <div class="col s12">
+            <p class="titleCv" id="head1"></p>
+            <p class="titleWork center" id="title"></p>
+          </div>
         </div>
+        <!-- Info user -->
+          <div class="row">
+
+            <div class="col s7 push-s5">
+              <span class="">
+               
+        <p class="" id="sub"></p>
+              </span>
+            </div>
+            <div class="col s5 pull-s7">
+              <img width="100%" class="left" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png">
+              <p class="" id="head2">
+              <span class="flow-text"></span></div>
+            </div>
+        
+
+
+
+
+       
+
+        <p>Ce CV est bizarre ! Mais comment faire un vrai CV ? Consultez ce site !<a target="blank" href="http://cvenligne.onisep.fr/index.php/"> Onisep cv en ligne</a></p>
+      
+    </div>
         <div class="modal-footer">
           <a href="mailto:theophile.vast@institutfrancais.es" class=" modal-action modal-close waves-effect waves-green btn-flat">Merci</a>
         </div>
@@ -505,7 +529,7 @@
     </div>
   </div>
 </div>
-</div>
+
 
 
 
