@@ -1,4 +1,4 @@
-<!doctype html>  
+<!doctype html>    
 <html class="no-js" lang="fr">
 <head>  
   <meta charset="UTF-8">
@@ -15,7 +15,7 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
-<body>
+<body >
 
   <nav class="white lighten-1 lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="http://www.institutfrancais.es/madrid/cursos-online/" class="brand-logo"><img class="logow" src="http://www.institutfrancais.es/madrid/adjuntos/logotipo_20160719.jpg"></a>
@@ -475,7 +475,7 @@
     <div id="control" class="container center">
     <span id="recul">Bienvenu, cliquez sur la flèche pour continuer</span>
     	<a id="left" class="left action btn-floating btn-large waves-effect waves-light blue action"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-    	<a id="right" class="right btn-floating btn-large waves-effect waves-light blue action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    	<a id="right" onclick="toggleCv()" class="right btn-floating btn-large waves-effect waves-light blue action"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
      
     </div>
      
@@ -485,26 +485,55 @@
     
 
     <form>
-     <div class="center">
       
       <div id="modal1" class="modal">
-        <div class="modal-content">
-          <div class="container">
-            <p class="border" id="head"></p>
-            <p class="border bigtitle" id="title"></p>
-            <p class="border" id="sub"></p>
-                  
-                  <p>Ce CV est bizarre ! Mais comment faire un vrai CV ? Consultez ce site !<a target="blank" href="http://cvenligne.onisep.fr/index.php/"> Onisep cv en ligne</a></p>
-                </div>
+    <div class="modal-content z-depth-5">     
+        <!-- header du cv -->
+        <div class="row">
+          <div class="col s12">
+            <p class="titleCv" id="head1"></p>
+            <p class="titleWork center" id="title"></p>
+          </div>
         </div>
+        <!-- Info user -->
+          <div class="row">
+            <div class="col s7 push-s5">
+              <span class="">
+                <p class="highlight"><i class="fa fa-university" aria-hidden="true"></i> FORMATION PROFESSIONNELLE</p>
+                <p id="fp"></p>
+                <p class="highlight"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                EXPERIENCE</p>
+                <p id="ex"></p>
+                <p class="highlight">
+                <i class="fa fa-flag" aria-hidden="true"></i> 
+                LANGUE</p>
+                <p id="lg"></p>
+                <p class="highlight"><i class="fa fa-paper-plane" aria-hidden="true"></i> 
+                LOISIRS</p>
+                <p id="ls"></p>
+                <p class="highlight"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                MES ATOUTS</p>
+                <p id="ma"></p>
+                <p class="" id="sub"></p>
+              </span>
+            </div>
+            <div class="col s5 pull-s7">
+              <img width="50%" class="left" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png">
+              <p class="" id="head2"></p>
+              <span class="flow-text"></span></div>
+            </div>
+        <p>Ce CV est bizarre ! Mais comment faire un vrai CV ? Consultez ce site !<a target="blank" href="http://cvenligne.onisep.fr/index.php/"> Onisep cv en ligne</a></p>
+      
+    </div>
         <div class="modal-footer">
           <a class=" modal-action modal-close waves-effect waves-green btn-flat">Merci</a>
+
         </div>
       </div>
     </div>
   </div>
 </div>
-</div>
+
 
 
 
@@ -516,32 +545,11 @@
 <!--    <a onclick="myFunction()" class="waves-effect waves-light btn"><i class="fa fa-university" aria-hidden="true"></i>Découvrir</a> -->
 
 
-
-
-    <div id="container">
-
-
-    </div>
-  </div>
-</div>
 <footer class="page-footer blue lighten-1 tagline">
-  <div class="">
-  <!--   <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">CV original</h5>
-        <p class="grey-text text-lighten-4">Made with <i class="fa fa-heartbeat" aria-hidden="true"></i> in Madrid</p>
-      </div>
-
-    </div>
-  </div> -->
   <div class="footer-copyright">
-    <div class="container center">
-      © 2017 Code by Théophile Vast in his <i class="fa fa-rocket" aria-hidden="true"></i> - Conception : Alix Creuzé Janvier 2004 - Mise à jour Janvier 2013</p>
+    <div class="center">
+      © 2017 Code by Théophile Vast in his <i class="fa fa-rocket" aria-hidden="true"></i> - Conception : AC Janvier 2004 - Mise à jour Janvier 2013</p>
       <br>
-      
-    
-      <!-- <a class="center grey-text text-lighten-4 right" href="http://www.institutfrancais.es/madrid/cursos-online/">Découvrir notre offre de cours en ligne</a> -->
-      
     </div>
   </div>
 </footer>
@@ -560,8 +568,15 @@
   });
 </script>
 
+<script src="jquery.printElement.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+   $("#modal1").printElement({printMode:'popup'}); 
+});
+</script>
+
 <!-- addthis -->
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b5b1ba4a06581c"></script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b5b1ba4a06581c"></script>  -->
 
 
 

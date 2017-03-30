@@ -31,13 +31,34 @@
 	border: solid black 1px;
 }
 
+.borderBottom {
+	border-bottom: solid #2196F3 2px;
+}
+
 .bigtitle {
 	font-size: 2em
 }
 
+
+
 .title {
 	font-family: 'Lobster', cursive;
 	
+}
+
+.titleCv  {
+	font-family: 'Lobster', cursive;
+	border-left: solid #2196F3 20px;
+	color: #2196F3;
+	font-size: 3em;
+}
+
+.titleWork  {
+	/*font-family: 'Lobster', cursive;*/
+	color: #2196F3;
+	font-size: 2em;
+	/*border-bottom: solid #2196F3 2px;*/
+	text-align: center;
 }
 
 .action {
@@ -47,6 +68,11 @@
     transform: translate(-50%, -100%);
     /*float: right*/
 
+}
+
+.highlight {
+	border-bottom: solid #2196F3 2px;
+	font-weight: bold;
 }
 
 footer {
