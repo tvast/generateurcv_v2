@@ -34,7 +34,7 @@ function toggleCv() {
 
     text1 =  ("<br>12 rue " +array[2]+ " ");
     text1 = (text1 + " | " +array[3]+ " | ");
-    text1 = (text1 +" | " +array[4]+ " ans");
+    text1 = (text1 +array[4]+ " ans");
 
     document.getElementById("head2").innerHTML = text1;
 
@@ -46,7 +46,7 @@ function toggleCv() {
 
     document.getElementById("fp").innerHTML = text3;
 
-    text4 = (array[7]+ " (de 2000 à 2009) <br>" +array[15]+ " (de 2010 à 2016)<strong><br><br>LANGUE</strong><br><br> " +array[8]+ " courant<br>");
+    text4 = (array[7]+ " (de 2000 à 2009) <br>" +array[15]+ " (de 2010 à 2016)<br>" +array[8]+ " courant<br>");
     
     document.getElementById("ex").innerHTML = text4;
 

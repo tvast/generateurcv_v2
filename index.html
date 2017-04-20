@@ -518,16 +518,24 @@
               </span>
             </div>
             <div class="col s5 pull-s7">
-              <img width="50%" class="left" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png">
-              <p class="" id="head2"></p>
-              <span class="flow-text"></span></div>
+              <div>
+                <img width="100%" class="left" src="super.jpg">
+              </div>
+              <div>
+              <br>
+                <p class="" id="head2">
+                </p>
+                <span class="flow-text"></span>
+              </div>
+            </div>
             </div>
         <p>Ce CV est bizarre ! Mais comment faire un vrai CV ? Consultez ce site !<a target="blank" href="http://cvenligne.onisep.fr/index.php/"> Onisep cv en ligne</a></p>
+
       
     </div>
         <div class="modal-footer">
           <a class=" modal-action modal-close waves-effect waves-green btn-flat">Merci</a>
-
+          <input type='button' id='btn' value='Imprimer cv' onclick='printDiv();'>
         </div>
       </div>
     </div>
@@ -568,15 +576,30 @@
   });
 </script>
 
-<script src="jquery.printElement.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
-   $("#modal1").printElement({printMode:'popup'}); 
-});
+  
+  function printDiv() 
+{
+
+  var divToPrint=document.getElementById('modal1');
+
+  var newWin=window.open('','Print-Window');
+
+  newWin.document.open();
+
+  newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
+
+  newWin.document.close();
+
+  setTimeout(function(){newWin.close();},10);
+
+}
 </script>
 
 <!-- addthis -->
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b5b1ba4a06581c"></script>  -->
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58cfe48a2de20889"></script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58cfe48a2de20889"></script> 
 
 
 
