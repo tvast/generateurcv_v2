@@ -4,52 +4,41 @@ var p = 0;
 var t = 0;
 
 
-/*Fleche droite avance*/
+	/*Fleche droite avance*/
 
 	document.getElementById("right").addEventListener("click", function(){
-    var x = document.getElementById("frm1");
-	var h = x.length;
-	var foo = 100/h;
-	var j = h+1;
+	    var x = document.getElementById("frm1");
+		var h = x.length;
+		var foo = 100/h;
+		var j = h+1;
 	
 	document.getElementById("progressbar").style.width= foo*g+"%";
 
 	/*switch de question*/	
 		var p = g++;
-
 		var t = p-1;
+
 		document.getElementById(t).classList.toggle("toggleCv");
 		document.getElementById(p).classList.toggle("toggleCv");
-		document.getElementById("recul").innerHTML = "";
-
+		document.getElementById("recul").innerHTML = ""
 
 	/*arrivé à la fin*/
-	var fab = h+1
-	if (g==fab) {
-
-		document.getElementById("control").classList.toggle("toggleCv");
-
-
-	}
-});
+		var fab = h
+		if (g==fab) {
+			document.getElementById("control").classList.toggle("toggleCv");
+		}
+	});
 
 	/*Fleche gauche recule*/
 
 	document.getElementById("left").addEventListener("click", function(){
-    	/*calcul % recule form*/
+    
+    /*calcul % recule form*/
 
 	var x = document.getElementById("frm1");
 	var h = x.length;
 	var foo = 100/h;
 	
 	document.getElementById("progressbar").style.width= (foo*g)-h+"%";
-
-		/*TODO switch de question*/
-	
-		/*var p = g--;
-		console.log(p+"total");
-		var t = p;
-		document.getElementById(p).classList.toggle("toggleCv");
-		document.getElementById(t).classList.toggle("toggleCv");*/
-		document.getElementById("recul").innerHTML = "Rechargez votre page pour modifier vos réponses";
+	document.getElementById("recul").innerHTML = "Rechargez votre page pour modifier vos réponses";
 });
